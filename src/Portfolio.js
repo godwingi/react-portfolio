@@ -7,10 +7,18 @@ import ProjectList from "./components/ProjectList"
 import preworkStudyGuide from "./images/prework-study-guide.png"
 import cinemaTravelGuide from "./images/cinema-travel-guide.png"
 import chefsChoice from "./images/chefs-choice.png"
+import { createGlobalStyle } from "styled-components"
+
+const GlobalStyle = createGlobalStyle `
+body {
+  font-family: 'Josefin Sans', sans-serif;
+}
+`
 
 export default function Portfolio() {
   return (
     <div>
+      <GlobalStyle />
       <Header />
       <NavBar />
       <AboutMe />
@@ -36,7 +44,7 @@ const projects = [
     id: 2,
     name: "Cinema Travel Guide",
     image: {cinemaTravelGuide},
-    alt: "Cinema Travel Guide Landing Page",
+    alt: "Cinema Travel Landing Page",
     description:
       "This app is designed to allow its users to search a place of interest, in order to see the current weather, and view the top three (3) movies that has that city or country’s name in it.",
     deployedLink: "https://kcl20.github.io/Cinema-Travel-Guide/",
