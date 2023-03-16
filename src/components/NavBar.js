@@ -4,10 +4,10 @@ export default function NavBar() {
   return (
     <>
       <ul className="navbar">
-        <li>About Me</li>
-        <li>Portfolio</li>
-        <li>Contact Me</li>
-        <li>Resume</li>
+        <button>About Me</button>
+        <button>Portfolio</button>
+        <button>Contact Me</button>
+        <button>Resume</button>
       </ul>
      </>
   );

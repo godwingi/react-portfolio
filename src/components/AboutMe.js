@@ -1,9 +1,12 @@
 import React from 'react'
+import helloBitmoji from "../../src/images/hello.png"
+import githubIcon from "../../src/images/github.svg"
+import linkedinIcon from "../../src/images/linkedin.svg"
 
 export default function AboutMe() {
   return (
     <>
-    <img src=''></img>
+    <img src={helloBitmoji} alt="BitmojiMe" />
     <div>Hello! I'm Girdika, a teacher by day, and a coder by night,
         ... or whenever I get the chance! 
         
@@ -27,6 +30,9 @@ export default function AboutMe() {
 
         Cheers! 
     </div>
+
+    <img src={githubIcon}alt="githubIcon" />
+    <img src={linkedinIcon}alt="linkedinIcon" />
     </>
   )
 }
