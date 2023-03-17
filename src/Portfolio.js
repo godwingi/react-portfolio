@@ -10,6 +10,8 @@ import Resume from "./components/Resume"
 import preworkStudyGuide from "./images/prework-study-guide.png"
 import cinemaTravelGuide from "./images/cinema-travel-guide.png"
 import chefsChoice from "./images/chefs-choice.png"
+import codingQuiz from "./images/coding-quiz.png"
+import portfolioOne from "./images/porfolio-one.png"
 import { createGlobalStyle } from "styled-components"
 
 const GlobalStyle = createGlobalStyle `
@@ -50,7 +52,25 @@ const projects = [
   },
   {
     id: 2,
-    name: "Cinema Travel Guide",
+    name: "Portfolio Made With Plain HTML & CSS",
+    image: {portfolioOne},
+    alt: "Portfolio One Landing Page",
+    description: "In trying to show my progress through my learning, here is the first portfolio I created. This portfolio showcases where I started off with, and how far I've come. The journey is important.",     
+    deployedLink: "https://godwingi.github.io/godwin-portfolio/",
+    githubRepoLink: "https://github.com/godwingi/godwin-portfolio",
+  },
+  {
+    id: 3,
+    name: "Coding Quiz",
+    image: {codingQuiz},
+    alt: "Coding Quiz Landing Page",
+    description: "The following application is a simple coding quiz in a multiple choice format. When you get a wrong answer, the time is decreased by 15 seconds. If you answer all the questions correctly, you will get a -- You Win -- prompt, asking you to give your initals to store and then put on a leaderboard. If you lose, you can start the game if you wish by refreshing the browser.",    
+    deployedLink: "https://godwingi.github.io/code-quiz/",
+    githubRepoLink: "https://github.com/godwingi/code-quiz",
+  },
+  {
+    id: 4,
+    name: "Cinema Travel Guide / Group Project",
     image: {cinemaTravelGuide},
     alt: "Cinema Travel Landing Page",
     description:
@@ -59,13 +79,22 @@ const projects = [
     githubRepoLink: "https://github.com/kcl20/Cinema-Travel-Guide",
   },
   {
-    id: 3,
-    name: "Chef's Choice",
+    id: 5,
+    name: "Chef's Choice / Group Project",
     image: {chefsChoice},
     alt: "Chef's Choice Landing Page",
     description:
       "Introducing “Chef’s Choice” – a recipe bank that holds a plethora of recipes added by a variety of users. The recipes are all categorized by type of meal and/or preference of meal. Once you’ve chosen your meal, you can then use the embedded link to purchase the ingredients on the Walmart website.",
     deployedLink: "https://chefs-choise.herokuapp.com/",
     githubRepoLink: "https://github.com/WeitheFang/chefs-choice",
+  },
+  {
+    id: 6,
+    name: "TBD / Group Project",
+    image: "TDB",
+    alt: "TBD",
+    description: "TBD",
+    deployedLink: "TBD",
+    githubRepoLink: "TBD",
   },
 ];

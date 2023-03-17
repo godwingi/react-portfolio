@@ -10,13 +10,17 @@ const TitleOne = styled.h2 `
 `;
 
 const HelloImage = styled.img `
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 2em;
     border-left: 20px solid black;
-    margin-bottom: 5em;
     width: 20em;
     height: 20em;
     float: left;
 `;
 const About = styled.div `
+    display: flex;
+    flex-wrap: wrap;
     margin: 1em;
     padding: 1em;
     font-size: 1.25em;
