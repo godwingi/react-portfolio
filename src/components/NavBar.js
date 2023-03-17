@@ -1,12 +1,13 @@
 import React from 'react'
-import styled from 'styled-components';
+import styled from 'styled-components'
+import { Link } from 'react-router-dom'
 
 const Navigate = styled.nav `
   padding: 1em;
   background: #465362;
 `
 
-const NavButtons = styled.a `
+export const NavLink = styled(Link) `
   display: inline-block;
   padding: 0.5em;
   background: #465362;
@@ -17,17 +18,21 @@ const NavButtons = styled.a `
   &:hover {
     color : #82a3a1;
   }
+  &:active {
+    color: #82a3a1;
+  }
 `
 
 export default function NavBar() {
+  
   return (
     <>
       <Navigate>
         <nav>
-        <NavButtons as="a" href="./components/AboutMe">About Me</NavButtons>
-        <NavButtons as="a" href="./components/ProjectList">Projects</NavButtons>
-        <NavButtons as="a" href="#">Contact Me</NavButtons>
-        <NavButtons as="a" href="#">Resume</NavButtons>
+        <NavLink to="/">About Me</NavLink>
+        <NavLink to="/projects">Projects</NavLink>
+        <NavLink to="/contact-me">Contact Me</NavLink>
+        <NavLink to="/resume">Resume</NavLink>
         </nav>
       </Navigate>
      </>

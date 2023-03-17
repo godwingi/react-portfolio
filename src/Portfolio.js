@@ -1,9 +1,12 @@
 import React from "react"
+import { Route, Routes } from 'react-router-dom'
 import Header from "./components/Header"
 import NavBar from "./components/NavBar"
 import Footer from "./components/Footer"
 import AboutMe from "./components/AboutMe"
 import ProjectList from "./components/ProjectList"
+import Contact from "./components/Contact"
+import Resume from "./components/Resume"
 import preworkStudyGuide from "./images/prework-study-guide.png"
 import cinemaTravelGuide from "./images/cinema-travel-guide.png"
 import chefsChoice from "./images/chefs-choice.png"
@@ -14,17 +17,22 @@ body {
   font-family: 'Josefin Sans', sans-serif;
 }
 `
-
 export default function Portfolio() {
   return (
-    <div>
-      <GlobalStyle />
-      <Header />
-      <NavBar />
-      <AboutMe />
-      <ProjectList projects={projects} />
-      <Footer />
-    </div>
+    <>
+      <div>
+        <GlobalStyle />
+        <Header />
+        <NavBar />
+        <Routes>
+          <Route path='/' element={<AboutMe />} />
+          <Route path='/projects' element={<ProjectList projects={projects} />} />
+          <Route path='/contact-me' element={<Contact />} />
+          <Route path='/resume' element={<Resume />} />
+        </Routes>
+        <Footer />
+      </div>
+    </>
   );
 }
 
