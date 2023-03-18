@@ -18,7 +18,7 @@ const HelloImage = styled.img `
     height: 20em;
     float: left;
 `;
-const About = styled.div `
+const AboutFont = styled.div `
     display: flex;
     flex-wrap: wrap;
     margin: 1em;
@@ -48,7 +48,7 @@ export default function AboutMe() {
     <>
     <TitleOne>About Me <br></br>Welcome to my Porfolio!</TitleOne>
    <HelloImage src={helloBitmoji} alt="BitmojiMe" />
-   <About>Hello! I'm Girdika, a teacher by day, and a coder by night,
+   <AboutFont>Hello! I'm Girdika, a teacher by day, and a coder by night,
         ... or whenever I get the chance! 
         
         I decided to take a Coding Bootcamp in order to learn
@@ -70,7 +70,7 @@ export default function AboutMe() {
         Please do not hesitate to contact me --currently disabled-- if you have any questions!
 
         Cheers! 
-        </About>
+        </AboutFont>
 
        <center><a href="https://github.com/godwingi"><Icon src={githubIcon}alt="githubIcon" /></a>
         <a href="https://ca.linkedin.com/in/girdika-godwin-a810ab4b"><Icon src={linkedinIcon}alt="linkedinIcon" /></a>

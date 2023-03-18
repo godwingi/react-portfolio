@@ -1,5 +1,8 @@
+//Technologies
 import React from "react"
 import { Route, Routes } from 'react-router-dom'
+import { createGlobalStyle } from "styled-components"
+//Components
 import Header from "./components/Header"
 import NavBar from "./components/NavBar"
 import Footer from "./components/Footer"
@@ -7,12 +10,12 @@ import AboutMe from "./components/AboutMe"
 import ProjectList from "./components/ProjectList"
 import Contact from "./components/Contact"
 import Resume from "./components/Resume"
+//Images
 import preworkStudyGuide from "./images/prework-study-guide.png"
 import cinemaTravelGuide from "./images/cinema-travel-guide.png"
 import chefsChoice from "./images/chefs-choice.png"
 import codingQuiz from "./images/coding-quiz.png"
 import portfolioOne from "./images/porfolio-one.png"
-import { createGlobalStyle } from "styled-components"
 
 const GlobalStyle = createGlobalStyle `
 body {
@@ -42,7 +45,7 @@ export default function Portfolio() {
 const projects = [
   {
     id: 1,
-    name: "Prework Study Guide",
+    name: "1. Prework Study Guide",
     image: {preworkStudyGuide},
     alt: "Prework Study Guide Landing Page",
     description:
@@ -52,7 +55,7 @@ const projects = [
   },
   {
     id: 2,
-    name: "Portfolio Made With Plain HTML & CSS",
+    name: "2. Portfolio Made With Plain HTML & CSS",
     image: {portfolioOne},
     alt: "Portfolio One Landing Page",
     description: "In trying to show my progress through my learning, here is the first portfolio I created. This portfolio showcases where I started off with, and how far I've come. The journey is important.",     
@@ -61,7 +64,7 @@ const projects = [
   },
   {
     id: 3,
-    name: "Coding Quiz",
+    name: "3. Coding Quiz",
     image: {codingQuiz},
     alt: "Coding Quiz Landing Page",
     description: "The following application is a simple coding quiz in a multiple choice format. When you get a wrong answer, the time is decreased by 15 seconds. If you answer all the questions correctly, you will get a -- You Win -- prompt, asking you to give your initals to store and then put on a leaderboard. If you lose, you can start the game if you wish by refreshing the browser.",    
@@ -70,7 +73,7 @@ const projects = [
   },
   {
     id: 4,
-    name: "Cinema Travel Guide / Group Project",
+    name: "4. Cinema Travel Guide / Group Project",
     image: {cinemaTravelGuide},
     alt: "Cinema Travel Landing Page",
     description:
@@ -80,7 +83,7 @@ const projects = [
   },
   {
     id: 5,
-    name: "Chef's Choice / Group Project",
+    name: "5. Chef's Choice / Group Project",
     image: {chefsChoice},
     alt: "Chef's Choice Landing Page",
     description:
@@ -90,7 +93,7 @@ const projects = [
   },
   {
     id: 6,
-    name: "TBD / Group Project",
+    name: "6. Project #3 / Group Project",
     image: "TDB",
     alt: "TBD",
     description: "TBD",

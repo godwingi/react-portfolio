@@ -5,9 +5,10 @@ import githubIcon from "../../src/images/github.svg"
 
 const ProjectDisplay = styled.div `
     display: flex;
-    justify-content: space-evenly;
-    align-items: flex-end;
     flex-direction: row-reverse;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
 
 `
 const TitleTwo = styled.h3 `
@@ -16,8 +17,8 @@ const TitleTwo = styled.h3 `
 `;
 
 const Icon = styled.img `
-    display: inline-block;
-    align-content: center;
+    display: inline-flex;
+    justify-content: center;
     margin: 0.5em;
     width: 2.5em;
     height: 2.5em;
@@ -30,6 +31,8 @@ const Icon = styled.img `
 `;
 
 const LandingPages = styled.img `
+    display: flex;
+    flex-wrap: nowrap;
     border: 0.25em solid black;
     border-radius: 2em;
     width: 20em;
@@ -38,10 +41,13 @@ const LandingPages = styled.img `
 `
 
 const SampleProjects = styled.div `
+    display: flex;
+    flex-wrap: wrap;
     margin: 1em;
     padding: 1em;
     font-size: 1.25em;
     line-height: 1.25em;
+    width: 20em;
     text-align: justify;
 `
 export default function Projects(props) {
@@ -53,11 +59,13 @@ export default function Projects(props) {
         deployedLink,
         githubRepoLink,
     } = props
+
+    console.log(image, 'this is the image return')
   return (
     <>
 <ProjectDisplay>
   <div>
-  <LandingPages src={image}alt={alt} />
+  <LandingPages src={image} alt={alt} />
   </div>
   <SampleProjects>
   <TitleTwo>
