@@ -39,7 +39,9 @@ const TextArea = styled.textarea`
   font-size: 1.25em;
   line-height: 1.25em;
   border-radius: 0.5em;
-  padding: 6em;
+  padding: 0.25em;
+  width: 25em;
+  height: 10em;
   margin-left: 2em;
 `;
 
