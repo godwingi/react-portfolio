@@ -101,7 +101,9 @@ const projects = [
     name: "6. Resumaker / Group Project",
     image: resumaker,
     alt: "resumaker Landing Page",
-    description: "TBD",
+    description: `We wanted to create an app that allows users to create free resumes! Trying to get a job is one challenge but 
+    having to pay money just to create a resume is NOT COOL! This became our motivation for the project. We want to allow our users to 
+    create a FREE account and not have to enter any credit card details to use the application.`,
     deployedLink: "https://intense-atoll-83101.herokuapp.com/",
     githubRepoLink: "https://github.com/Sophack/resumaker/",
   },
