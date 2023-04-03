@@ -16,6 +16,7 @@ import cinemaTravelGuide from "./images/cinema-travel-guide.png";
 import chefsChoice from "./images/chefs-choice.png";
 import codingQuiz from "./images/coding-quiz.png";
 import portfolioOne from "./images/portfolio-one.png";
+import resumaker from "./images/resumaker.png";
 
 const GlobalStyle = createGlobalStyle`
 body {
@@ -97,11 +98,11 @@ const projects = [
   },
   {
     id: 6,
-    name: "6. Project #3 / Group Project",
-    image: "TDB",
-    alt: "TBD",
+    name: "6. Resumaker / Group Project",
+    image: resumaker,
+    alt: "resumaker Landing Page",
     description: "TBD",
-    deployedLink: "TBD",
-    githubRepoLink: "TBD",
+    deployedLink: "https://intense-atoll-83101.herokuapp.com/",
+    githubRepoLink: "https://github.com/Sophack/resumaker/",
   },
 ];
